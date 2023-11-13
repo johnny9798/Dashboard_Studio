@@ -1,0 +1,83 @@
+pages:
+  - name: Home
+    path: 'conf.yml'
+appConfig:
+  theme: colorful
+  layout: auto
+  iconSize: large
+  language: it
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: true
+  statusCheckInterval: 100
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: true
+    hideSettings: true
+    hideFooter: true
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+  workspaceLandingUrl: http://servizispeciali.it
+  customColors:
+    colorful:
+      primary: '#e8eae1'
+      background: '#313941'
+      background-darker: '#05070e'
+pageInfo:
+  title: Network Services
+  description: Infrastruttura di rete
+  navLinks:
+    - title: Workspace
+      path: workspace?url=http://servizispeciali.it
+      target: sametab
+  footerText: ''
+sections:
+  - name: Firewall
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: Pihole
+        description: Pihole - DNS Server
+        icon: >-
+          https://raw.github.com/johnny9798/Dashboard_Studio/main/icons/pihole/pihole.349x512.png
+        url: http://pihole.studio
+        target: newtab
+        id: 0_822_pihole
+      - &ref_1
+        title: Proxy Manager
+        description: Nginx Proxy Manager
+        icon: >-
+          https://raw.github.com/johnny9798/Dashboard_Studio/main/icons/nginx-proxy/nginx.223x256.png
+        url: http://nginx.proxy.studio
+        target: workspace
+        id: 1_822_proxymanager
